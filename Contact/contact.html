@@ -1,0 +1,124 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Ngoc Kim
+  ID: s3970589
+  Acknowledgement: No.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Kim Nguyen Bookstore | Contact Us</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo"><a href="../index.html">Kim Nguyen <span> Bookstore </span></a></div>
+        <div class="mobile-nav-icon"><span></span>☰</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">HomePage</a></li>
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../Home/home.html#vn">Viet Nam</a></li>
+                <li><a href="../Home/home.html#us">United States</a></li>
+                <li><a href="../Home/home.html#uk">United Kingdom</a></li>
+                <li><a href="../Home/home.html#russia">Russia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main contact us-->
+    <main>
+        <h1>Contact <span>Us</span></h1>
+        <form action="#" method="POST" id="contact-form">
+          <label for="contact-purpose">Contact Purpose</label>
+          <select name="contact-purpose" id="contact-purpose" required>
+            <option value="">-- Select an option --</option>
+            <option value="sell-books">I want to sell books</option>
+            <option value="buy-books">I want to buy books</option>
+          </select>
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+      
+          <fieldset>
+            <legend>Contact Preference</legend>
+            <label for="by-email">
+              <input type="checkbox" id="by-email" name="contact-preference[]" value="email"> By email
+            </label>
+            <label for="by-phone">
+              <input type="checkbox" id="by-phone" name="contact-preference[]" value="phone"> By phone
+            </label>
+          </fieldset>
+      
+          <fieldset>
+            <legend>Receive Weekly Newsletter</legend>
+            <label for="yes">
+              <input type="radio" id="yes" name="newsletter" value="yes" checked> Yes
+            </label>
+            <label for="no">
+              <input type="radio" id="no" name="newsletter" value="no"> No
+            </label>
+          </fieldset>
+      
+          <label for="notes">Extra Notes</label>
+          <textarea id="notes" name="notes"></textarea>
+      
+          <button type="submit" class="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="max-width">
+            <h3>KIM NGUYEN <span>BOOKSTORE STORES</span> YOUR BOOKS</h3>
+            <div class="footer-content">
+                <div class="column left">
+                    <h4>About Us</h4>
+                    <ul class="list-inline-item">
+                        <a href="https://www.facebook.com/nnk2004">Facebook</a>
+                    </ul>
+                    <ul>
+                        <a href="https://www.youtube.com/channel/UCpPsRij-N7wRGcxh8SNXeHw">YouTube</a>
+                    </ul>
+                    <ul>
+                        <a href="https://www.instagram.com/k.ovtk/">Instagram</a>
+                    </ul>
+                </div>
+                <div class="column right">
+                    <h4>Policies and Contact</h4>
+                    <ul>
+                        <a href="https://policies.google.com/privacy?hl=en-US">Privacy Policies</a>
+                    </ul>
+                    <ul>
+                        <a href="https://www.youtube.com/channel/UCpPsRij-N7wRGcxh8SNXeHw">Terms of Use</a>
+                    </ul>
+                    <ul>
+                        <a href="copyrights.html">Copyright Policies</a>
+                    </ul>
+                    <ul>
+                        <a href="../Contact/contact.html">Contact Us</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Author: Nguyen Ngoc Kim | s3970589@rmit.edu.vn | Last modified: 20/04/2023
+                    <br> Copyright © 2023 . RMIT University . All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>

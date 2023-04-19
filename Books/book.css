@@ -1,0 +1,303 @@
+/*
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Ngoc Kim
+  ID: s3970589
+  Acknowledgement: Poppins font-family.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body, header, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+  
+/* Basic styles for the navigation bar */
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #63b340; 
+}
+
+header .logo a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .logo a span{
+    color: rgb(232, 10, 17);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #62b340f9;
+    color: #fff;
+    height: 75px;
+    padding: 0 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #ffffff;
+    display: none;
+}
+
+nav ul li a:hover{
+    color: #30edf4;
+}
+
+
+/*Reponsive*/
+
+@media (max-width: 991px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon:hover+nav {
+        display: block;
+    }
+
+    nav:hover {
+        display: block;
+    }
+}
+
+/* Style for the main part */
+.works {
+    height: auto;
+    margin-top: 20px;
+    padding: 30px 0 0px;
+}
+
+.works h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0 30px;
+    padding-top: 10px;
+    color: #e61e2a;
+    background-color: #a6ff0049;
+    border-radius: 40px;
+}
+
+.works h1 span {
+    color: #000054;
+}
+
+.works .item-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.works .photo {
+    width: 40vh;
+    height: 450px;
+}
+
+.works .book {
+    margin: 0 10px 0;
+}
+
+.works .book:hover {
+    background: #38550349;
+}
+
+.works .book-name {
+    width: 40vh;
+    margin-top: 20px;
+    font-size: 1.37rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.works .item-list a {
+    text-decoration: none;
+    color: #1d951f;
+}
+
+.works .book:hover .book-name,
+.works .book:hover {
+    color: crimson;
+}
+
+/* CSS for Footer */
+footer {
+    background-color: #62b340f9;
+    padding: 20px;
+    font-family: monospace;
+    margin-top: 20px;
+}
+
+
+
+.max-width {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+h3 span{
+    color: crimson;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex-basis: 35%;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-content .column ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content .column ul a:hover {
+    color: #30edf4;
+} 
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.row {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1200px) {
+    .column {
+        flex-basis: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .works h1 {
+        border-radius: 79px;
+        font-size: 2.5rem;
+    }
+
+    .max-width {
+        max-width: 350px;
+    }
+    
+    .works .item-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book {
+        padding-top: 20px;
+    }
+}
