@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    var addToCartBtn = document.querySelector('.submit');
+    var submitBtn = document.querySelector('.submit');
     
-    addToCartBtn.addEventListener('click', function() {
+    submitBtn.addEventListener('click', function() {
       alert('Thanks for your contact! Have a nice day <3')
     });
   });
